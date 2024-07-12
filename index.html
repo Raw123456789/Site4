@@ -11,7 +11,7 @@
         <h2>To-Do List </h2>
         <img src="Images/Icon.png">
         <div class="row">
-            <input type="text" id="input-box" placeholder="Add your text" onkeyup="lettersOnly(this)">
+            <input type="text" id="input-box" placeholder="Add your text" onkeyup="lettersOnly(this)" onkeyup="Kyrylyca(this)">
              <button onclick="addTask()">Add</button>
         </div>
         <ul id="list-container">
@@ -28,11 +28,18 @@
 <script src="script.js"></script>
 <script>
 function lettersOnly(input) {
-var regex =  /[^a-z1-9^а-ь]/gi;
+var regex =  /[^a-z1-9]/gi;
 input.value = input.value.replace(regex, "");
 }
-
 </script>
+<script>
+function Kyrylyca(input) {
+var regex =  /[^а-ь1-9]/gi;
+input.value = input.value.replace(regex, "");
+}
+    
+    </script>
+    
 </body>
 </html>
 
