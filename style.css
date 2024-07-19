@@ -96,3 +96,47 @@ ul li span{
 ul li span:hover{
     background: #f3f165; 
 }
+.Pad{
+    width: 100%;
+    max-width: 540px;
+    background: #fefb52;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-600px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+@keyframes SlideInRight{
+    from{
+        transform: translateX(600px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+.todo-app {
+    animation-name: slideInLeft;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+.Pad {
+    animation-name: SlideInRight;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
