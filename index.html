@@ -31,7 +31,7 @@
 <script src="script.js"></script>
 <script>
 function lettersOnly(input) {
-var regex = /[^\p{L}]/gu;
+var regex = /[^\p{L}]0-9/gu;
 input.value = input.value.replace(regex, "");
 }
 </script>    
